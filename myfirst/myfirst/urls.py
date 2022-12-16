@@ -18,7 +18,10 @@ from myfirstapp.views import index
 from django.contrib import admin
 from django.urls import path
 
+from myfirstapp.views import *
+
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('myfirstapp/', index)
+    path('myfirstapp/', index),
+    path('cats/', categories)
 ]
