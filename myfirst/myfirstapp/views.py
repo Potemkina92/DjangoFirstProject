@@ -7,6 +7,7 @@ from django.shortcuts import render, redirect
 def index(request):
     return HttpResponse('Страница приложения MyfirstApp')
 
+<<<<<<< HEAD
 def categories(request, catid):
     if request.GET:
         print(request.GET)
@@ -25,3 +26,7 @@ def archive(request, year):
 
 def pageNotFound(request, exception):
     return HttpResponseNotFound(f'<h1>Страница не найдена</h1>')
+=======
+def categories(request):
+    return HttpResponse("<h1>Статьи по категориям</h1>")
+>>>>>>> 087d2e873671f516ce3bfebd3b7e87bdb45f2119
