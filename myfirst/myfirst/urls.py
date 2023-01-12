@@ -26,13 +26,9 @@ from myfirstapp.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-<<<<<<< HEAD
-    path('', include('myfirstapp.urls'))
-
-=======
+    path('', include('myfirstapp.urls')),
     path('myfirstapp/', index),
     path('cats/', categories)
->>>>>>> 087d2e873671f516ce3bfebd3b7e87bdb45f2119
 ]
 
 if settings.DEBUG:
